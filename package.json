@@ -2,9 +2,11 @@
   "name": "dwpci-awesome-app-2024a",
   "version": "0.0.0",
   "description": "Proyecto de la clase de la materia de DWPCI 2024A",
+  "type": "module",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./app.js",
+    "dev": "node --watch ./app-js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/eeduardo04/eeduardo04-dwpcI-awesome-app/issues"
   },
-  "homepage": "https://github.com/eeduardo04/eeduardo04-dwpcI-awesome-app#readme"
+  "homepage": "https://github.com/eeduardo04/eeduardo04-dwpcI-awesome-app#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
