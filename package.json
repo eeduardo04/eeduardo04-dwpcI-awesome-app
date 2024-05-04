@@ -1,5 +1,5 @@
 {
-  "name": "dwpci-awesome-app-2024a",
+  "name": "dwpci-awesome-app-2024",
   "version": "0.0.0",
   "description": "Proyecto de la clase de la materia de DWPCI 2024A",
   "type": "module",
@@ -26,5 +26,6 @@
   "homepage": "https://github.com/eeduardo04/eeduardo04-dwpcI-awesome-app#readme",
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "devDependencies": {}
 }
