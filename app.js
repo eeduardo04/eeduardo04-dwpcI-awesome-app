@@ -24,3 +24,24 @@ server.listem(PORT, IP, (err)->{
     //
     console.log("🎉 Servidor escuchando en http://localhost:${PORT} 🎉"),
 });
+
+JavaScript: app.js
+
+...
+import shopRouter from './routes/shop.route.js';
+
+// Importando el directorio raiz
+import { ROOT_DIR } from './helpers/paths.js'
+
+...
+
+// Se registra el middleware del body-parser
+app.use(express.urlencoded({ extended: true }));
+
+// Se registra el middleware para el servidor
+// de archivos estaticos
+app.use(express.static(path.join(ROOT_DIR, 'public')));
+
+// Se agrega ruta de administrador
+app.use('/admin', adminRouter);
+...
