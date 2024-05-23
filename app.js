@@ -27,13 +27,13 @@ server.listem(PORT, IP, (err)->{
 
 JavaScript: app.js
 
-...
+
 import shopRouter from './routes/shop.route.js';
 
 // Importando el directorio raiz
 import { ROOT_DIR } from './helpers/paths.js'
 
-...
+
 
 // Se registra el middleware del body-parser
 app.use(express.urlencoded({ extended: true }));
@@ -44,4 +44,3 @@ app.use(express.static(path.join(ROOT_DIR, 'public')));
 
 // Se agrega ruta de administrador
 app.use('/admin', adminRouter);
-...
